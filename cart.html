@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <title>Товари</title>
+</head>
+
+
+<body>
+
+<div class="header">
+    <div id="topHeader">
+        <div class="logo">
+            <nobr>AlcoMarket</nobr>
+        </div>
+        <div class="miniMedia">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-viber"></i>
+            <i class="fab fa-telegram"></i>
+            <i class="fas fa-phone-square-alt"></i>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar sticky-top navbar-expand-md bg-white navbar-dark" id="headerButtons">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color: #121212;; font-size:28px;"></i>
+            </span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <a class="headerButton" href="index.html">
+            <p>ГОЛОВНА</p>
+        </a>
+        <div class="dropdown headerButton">
+            <div class="headerButton1" onclick="window.location='products.html'">
+                <p>КАТЕГОРІЇ</p>
+            </div>
+            <div class="dropdown-content">
+                <div>
+                    <a href="#">ПИВО</a>
+                    <a href="#">ВИНО</a>
+                </div>
+                <div>
+                    <a href="#">ЛІКЕРИ</a>
+                    <a href="#">ЗАКУСКИ</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerButton">
+            <p>ПРО НАС</p>
+        </div>
+        <div class="headerButton">
+            <p>ДОСТАВКА</p>
+        </div>
+        <a class="headerButton" href="cart.html">
+            <p>КОШИК <i class="fas fa-shopping-cart"></i></p>
+        </a>
+    </div>
+</nav>
+
+<h1>КОШИК</h1>
+
+<div class="cart">
+    <div class="item">
+        <img src="https://e0.edimdoma.ru/data/posts/0001/8912/18912-ed4_wide.jpg?1495005760" />
+        <div class="description">
+            <h4>Сидр Яблучний</h4>
+            <p>Міцність: &#x1F37A &#x1F37A &#x1F37A</p>
+        </div>
+        <div class="prices">
+            <div class="price-for-one">
+                <p>Ціна за од.</p>
+                <h4>25</h4>
+            </div>
+            <div class="amount">
+                <p>К-сть</p>
+                <h4>40</h4>
+            </div>
+            <div class="total">
+                <h4>Всього</h4>
+                <h4>1000</h4>
+            </div>
+        </div>
+        <i class="fas fa-times"></i>
+    </div>
+
+    <h4 id="big-total">Всього до сплати: 1000</h4>
+
+    <div class="order-button">
+        <div id="checkoutButton" type="button" data-toggle="modal" data-target="#exampleModal">
+
+            <p>Оформити замовлення</p>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Оформлення замовлення</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label>Ім'я</label>
+                                <input type="text" class="form-control" id="name" value="" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Прізвище</label>
+                                <input type="text" class="form-control" id="surname" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label>Область</label>
+                                <input type="text" class="form-control" id="oblast" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Місто</label>
+                                <input type="text" class="form-control" id="city" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label>Номер телефону</label>
+                                <input type="text" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>№ відділення НП</label>
+                                <input type="text" class="form-control" id="NPnumber" required>
+                            </div>
+                        </div>
+                        <button type="button" data-dismiss="modal">Відмінити</button>
+                        <button type="submit">Оформити замовлення</button>></form>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="logo">
+        <nobr style="color: #b2bf0d; margin: auto; vertical-align: middle; line-height: 150px;">AlcoMarket</nobr>
+    </div>
+    <div class="rights">
+        <p>All rights reserved. 2021®</p>
+    </div>
+    <div class="media">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-viber"></i>
+        <i class="fab fa-telegram"></i>
+        <i class="fas fa-phone-square-alt"></i>
+    </div>
+</footer>
+
+</body>
+
+
+<script src="script/index.js"></script>
+<script src="script/item.js"></script>
+</html>

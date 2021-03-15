@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="style/index.css"> -->
+    <title>Головна</title>
+</head>
+
+<style>
+    @import url('style/header.css');
+    @import url('style/footer.css');
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #list li {
+        list-style-type: circle;
+    }
+
+    #list > img {
+        width: 100%;
+        max-width: 40%;
+        height: 20%;
+        object-fit: cover;
+        float: left;
+        margin: 0px 100px;
+        vertical-align: middle
+    }
+</style>
+
+<body>
+<div class="header">
+    <div id="topHeader">
+        <div class="logo">
+            <nobr>AlcoMarket</nobr>
+        </div>
+        <div class="miniMedia">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-viber"></i>
+            <i class="fab fa-telegram"></i>
+            <i class="fas fa-phone-square-alt"></i>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar sticky-top navbar-expand-md bg-white navbar-dark" id="headerButtons">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color: #121212;; font-size:28px;"></i>
+            </span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <a class="headerButton" href="index.html">
+            <p>ГОЛОВНА</p>
+        </a>
+        <div class="dropdown headerButton">
+            <a class="headerButton1" href="products.html">
+                <p>КАТЕГОРІЇ</p>
+            </a>
+            <div class="dropdown-content">
+                <div class="dropdown-content">
+                    <div>
+                        <a href="#">ПИВО</a>
+                        <a href="#">ВИНО</a>
+                    </div>
+                    <div>
+                        <a href="#">ЛІКЕРИ</a>
+                        <a href="#">ЗАКУСКИ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerButton">
+            <p>ПРО НАС</p>
+        </div>
+        <div class="headerButton">
+            <p>ДОСТАВКА</p>
+        </div>
+        <a class="headerButton" href="cart.html">
+            <p>КОШИК <i class="fas fa-shopping-cart"></i></p>
+        </a>
+    </div>
+</nav>
+
+<div id="body" style="padding: 100px 40px">
+
+    <div id="list">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Yalta_summit_1945_with_Churchill%2C_Roosevelt%2C_Stalin.jpg">
+        <h3>Хто ми?</h3>
+        <ul>
+            <li>Ми молода компанія, що впевнено входить на ринок збуту</li>
+            <li>Ми творчі люди що дарують вам нові смаки</li>
+        </ul>
+        <h3>Що ми робимо?</h3>
+        <ul>
+            <li>Ми створюємо найкращі крафтові напої</li>
+            <li>Ми прагнемо їх доступності для будь-якого користувача</li>
+            <li>Ми працюємо для вас!</li>
+        </ul>
+    </div>
+</div>
+
+<footer class="footer" style="position: absolute; width:100%; bottom: -50px;">
+    <div class="logo">
+        <nobr style="color: #b2bf0d; margin: auto; vertical-align: middle; line-height: 150px;">AlcoMarket</nobr>
+    </div>
+    <div class="rights">
+        <p>All rights reserved. 2021®</p>
+    </div>
+    <div class="media">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-viber"></i>
+        <i class="fab fa-telegram"></i>
+        <i class="fas fa-phone-square-alt"></i>
+    </div>
+</footer>
+</body>
+
+<script src="script/index.js"></script>
+<script src="https://kit.fontawesome.com/54144e2123.js"></script>
+
+
+</html>
